@@ -1,0 +1,7 @@
+Parte 1
+sudo docker image build . -t caddy1
+sudo docker container run --name mc -p 8080:80 -d caddy1
+Parte 2
+
+sudo docker image build . -t caddy2
+sudo docker container run --name mc1 -v $(pwd)/pages:/usr/src/pages -p 8080:80 -d caddy2
