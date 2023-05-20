@@ -1,6 +1,11 @@
+sudo docker pull caddy
+
 Parte 1
 sudo docker image build . -t caddy1
 sudo docker container run --name mc -p 8080:80 -d caddy1
+sudo docker container stop mc
+
+
 Parte 2
 
 sudo docker image build . -t caddy2
